@@ -163,5 +163,17 @@
     </div>
   </div>
 
+
+<script>
+  // Simple password protection
+  var password = "onkar123";   // 🔐 Set your password here
+
+  var userPassword = prompt("Enter Password to View This Page:");
+
+  if (userPassword !== password) {
+      alert("Incorrect password! Access denied.");
+      window.location.href = "https://google.com"; // Redirect if wrong
+  }
+</script>
 </body>
 </html>
